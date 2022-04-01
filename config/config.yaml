@@ -1,0 +1,15 @@
+master:
+  port: 8070
+  read_time_out: 5000
+  write_time_out: 5000
+
+worker:
+  name: test_work_1
+
+etcd:
+  endpoints: ["127.0.0.1:2379"]
+  dial_time_out: 5000
+  task_prefix: "cron/tasks/"
+  kill_prefix: "cron/kills/"
+  machine_prefix: "cron/machines/"
+  lock_prefix: "cron/lock/"
